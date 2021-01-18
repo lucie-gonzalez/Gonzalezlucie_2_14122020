@@ -25,7 +25,8 @@ ul
 
 fieldset
 {
-border: none}
+border: none
+}
 
 .btn-recherche__input__submit
 {
@@ -34,6 +35,10 @@ border: none}
 
 .filter-input
 {
+	cursor: pointer;
+}
+.filter-icone
+{  
 	cursor: pointer;
 }
 
@@ -345,8 +350,18 @@ navbar a
 }
 
 /* +++ HOVER DES CARTES ++++ */
-.cards-aside:hover,.hebergement_cards:hover,.activite__cards:hover
+.cards-aside:hover 
 {
+	transform: scale(1.05);
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.hebergement_cards:hover
+{  
+	transform: scale(1.05);
+	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.activite__cards:hover
+{  
 	transform: scale(1.05);
 	box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
 }
@@ -541,7 +556,7 @@ aside
 /* +++ FOOTER ++++ */
 .footer_body
 {
-	max-width: 1853px;
+	max-width: 100%;
 }
 
 footer
@@ -749,7 +764,13 @@ footer
 		width: 100%;
 		display: grid;
 		grid-template-columns: 1fr 60% 30px 33% 1fr;
-	grid-template-areas:        "  header header header header header"                                          " search search search search search"                                          " filter  filter filter filter filter"                                             "  . main .  aside . "                                                ". activity  activity  activity . "    }
+	grid-template-areas:        "  header header header header header"                
+							  " search search search search search"                                   
+								 " filter  filter filter filter filter"                          
+										"  . main .  aside . "                       
+									 ". activity  activity  activity . "  
+									"footer  footer footer footer footer"  }
+																				 
 
 	.logo
 	{
@@ -943,7 +964,7 @@ footer
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
 		grid-column-gap: 20px;
-		grid-row-gap: 20px;
+		grid-row-gap: 10px;
 		justify-items: center;
 	}
 
@@ -999,7 +1020,7 @@ footer
 	.dame
 	{
 		grid-column: 4/5;
-		grid-row: 2/3;
+		grid-row: 2/4;
 	}
 
 	.dame img
@@ -1010,7 +1031,7 @@ footer
 	.parc
 	{
 		grid-column: 4/5;
-		grid-row: 4/7;
+		grid-row: 5/7;
 	}
 
 	/* +++ FOOTER++++ */
@@ -1025,7 +1046,7 @@ footer
 	.footer_body
 	{
 		display: flex;
-		justify-content: flex-start;
+		justify-content:left;
 		margin: auto;
 		padding-left: 3%;
 	}
