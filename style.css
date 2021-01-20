@@ -598,6 +598,7 @@ footer
 
 	.hebergement-cards-content
 	{
+		background-color: white;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-row-gap: 10px;
@@ -733,7 +734,7 @@ footer
 	/* +++ HEBERGEMENT++++ */
 	main
 	{
-		background-color: #f2f2f2;
+		background-color: white;
 		height: auto;
 		border-radius: 17px;
 		grid-area: main;
@@ -744,6 +745,7 @@ footer
 	{
 		display: flex;
 		margin-left: 3%;
+		margin-right: 3%;
 	}
 
 
@@ -907,6 +909,7 @@ footer
 
 	.hebergement-cards-content
 	{
+		background-color: #f2f2f2;
 		display: grid;
 		grid-template: repeat(2, 1fr) / repeat(3, 1fr);
 		grid-column-gap: 20px;
